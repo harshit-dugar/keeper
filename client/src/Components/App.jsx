@@ -12,10 +12,10 @@ function App(){
         setNotes((prevNotes)=>{
             return [...prevNotes, newNote]
         })
-        axios.post('http://localhost:3001/add', newNote)
+        axios.post('https://keeper-f7dc.onrender.com/add', newNote)
     }
     React.useEffect(()=>{
-        axios.get('http://localhost:3001/')
+        axios.get('https://keeper-f7dc.onrender.com/')
         .then((response)=>{
             setNotes(response.data);
         }
@@ -27,7 +27,7 @@ function App(){
                 return index !== id;
             })
         })
-        axios.post('http://localhost:3001/delete',{title:notes[id].title,content:notes[id].content})
+        axios.post('https://keeper-f7dc.onrender.com/delete',{title:notes[id].title,content:notes[id].content})
     }
     return (
         <div>
