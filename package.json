@@ -1,0 +1,24 @@
+{
+    "name": "keeper",
+    "version": "1.0.0",
+    "description": "some description",
+    "main": "./server/server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "cd ./server && node index.js"
+    },
+    "engines": {
+      "node": "16.x"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "argon2": "^0.28.4",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "mongoose": "^6.8.4",
+        "nodemon": "^2.0.20"
+    }
+  }
